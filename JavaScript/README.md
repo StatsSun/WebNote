@@ -1,5 +1,9 @@
 # JavaScript.Note
 
+一、贷款计算器
+
+1. JS代码
+
 ```javascript
 function calculate() {
     var amount = document.getElementById("amount"),
@@ -88,6 +92,77 @@ function getlenders(amount,apr,years,zipcode) {
 
 
 
+
+
+
+二、复选框设置
+
+1. HTML
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>复选框设置</title>
+   </head>
+   <body>
+       <!---->
+       <input type="button" value="全选" id="btn1"><br>
+       <input type="button" value="不选" id="btn2"><br>
+       <input type="button" value="反选" id="btn3"><br>
+       <div id="checkbox">
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox"><br>
+           <input type="checkbox">
+       </div>
+   </body>
+   </html>
+   ```
+
+2. JS代码
+
+```javascript
+<script>
+        window.onload=function () {
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3 = document.getElementById("btn3");
+            var checkbox = document.getElementById("checkbox");
+            var box = checkbox.getElementsByTagName("input");
+
+            btn1.onclick = function () {
+                for(var i=0;i<box.length;i++){
+                    box[i].checked = true;
+                }
+            };
+
+            btn2.onclick = function () {
+                for(var i=0;i<box.length;i++){
+                    box[i].checked = false;
+                }
+            };
+
+            btn3.onclick = function () {
+                for(var i=0;i<box.length;i++){
+                    if(box[i].checked === true){
+                        box[i].checked = false;
+                    }
+                    else {
+                        box[i].checked = true;
+                    }
+                }
+            }
+        }
+    </script>
+```
 
 
 
