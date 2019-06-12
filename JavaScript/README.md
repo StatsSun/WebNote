@@ -166,3 +166,50 @@ function getlenders(amount,apr,years,zipcode) {
 
 
 
+三、笔记javascript
+
+1、js区分大小写，js有内定关键字作为标识符，设置函数名称及变量命名时避免使用
+
+​	double \ goto \ short \ long \ char \ throws \ static \ class \ float \ final \ public \ transient \ package等				等；
+
+​	Array \ Boolean \ Date \ Error \ JSON \ Math \ NaN \ Number \ RegExp \ String \object \ isNaN \ 		 Function \ undefined 等等；
+
+2、js的可选分号：
+
+​	a、通常当前语句与下一行语句无法合并解析，js则在第一行后面填补分号；
+
+​	b、例外一：return \ break \ continue 和随后的表达式之间不能换行，否则会被解释为两个单独的语句；
+
+​	c、“++”和“--”作为后缀时，应和表达式同行，否则行尾将填补分号，同时“++”、“—”会作为下一行代码的前缀操作符并与之一起解析
+
+​	如：x
+
+​	      ++
+
+​	       y
+
+​	会被解析为x,++y;而非x++,y;
+
+3、数据类型：原始类型和对象类型
+
+​	a、原始类型：数值、字符串、布尔值等；
+
+​	b、对象类型：数组、函数、日期类、正则类、错误类等；
+
+​	c、对象类都具有方法属性，可以通过“.”或者“[ ]”等调用
+
+​	d、js中所有数字均用浮点值表示；其中因二进制浮点数和四舍五入的准确度问题导致二进制浮点数无法精确表示类似0.1这样简单的数字，所以x = 0.3-0.2=0.0999....98  ，y = 0.2-0.1=0.1，x==y? 其中x不等与y，返回结果为false，涉及金融计算时慎用，此情况只发生在比较二者是否相等时出现
+
+​	e、字符串书写可拆分换行，但每行必须用反斜杠（\）结束，如果时需要另起一行，则用转义字符\n即可；字符串引号时使用，可单可双，但当js与html混用时注意两者单独统一使用标准，如JS统一用单引号，html统一用双引号:
+
+```html
+<button onclick= "alert('thank you')">Click Me</button>
+```
+
+​	f 、
+
+
+
+​	
+
+​	
