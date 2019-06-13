@@ -206,7 +206,21 @@ function getlenders(amount,apr,years,zipcode) {
 <button onclick= "alert('thank you')">Click Me</button>
 ```
 
-​	f 、
+4、文本（字符串）
+
+​	a、字符串直接量
+
+​	b、
+
+​	c、
+
+​	d、
+
+​	e、
+
+
+
+
 
 
 
