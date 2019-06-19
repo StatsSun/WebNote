@@ -306,9 +306,13 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​		条件运算符（？：）：第一个操作数是布尔值，如果为真，则执行第二个操作数，如果为假，则执行第三个操作数；
 
-​		typeof运算符：
+​		typeof运算符：是一元运算符，可以和条件运算符结合使用、和switch语句结合等；
 
-​		delete运算符：
+```javascript
+(typeof value == "string")? "'"+value+"'" : value
+```
+
+​		delete运算符：一元操作符，
 
 ​		void运算符：
 
