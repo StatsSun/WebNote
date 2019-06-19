@@ -304,7 +304,7 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​	M、其他运算符：
 
-​		条件运算符（？：）：
+​		条件运算符（？：）：第一个操作数是布尔值，如果为真，则执行第二个操作数，如果为假，则执行第三个操作数；
 
 ​		typeof运算符：
 
@@ -313,6 +313,26 @@ function getlenders(amount,apr,years,zipcode) {
 ​		void运算符：
 
 ​		逗号运算符：
+
+6、语句
+
+​	A、
+
+​	B、
+
+​	C、
+
+​	D、
+
+​	E、
+
+​	F、
+
+​	H、
+
+​	I、
+
+​	
 
 
 
