@@ -332,7 +332,7 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​		function中花括号是必须的，即使语句中只有一条语句，也需要用花括号包起来；函数声明的语句其函数名称和函数体均提前，脚本中所有函数包括嵌套的函数都会在当前上下文中其他代码之前声明
 
-​	C、条件语句：
+​	C、条件语句：if、if else 、if elseif 、else
 
 ​	D、
 
