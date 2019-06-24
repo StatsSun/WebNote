@@ -346,13 +346,17 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​		throw语句抛出一个代表错误的数字，或者包含可读的错误消息字符串，通常返回Error类型和其子类型；通常于catch（e）、finally任一语句一起执行；
 
-​	F、
+​	F、with、 debugger、 use  strict 语句
 
-	H、
+​		with语句用于临时扩展作用域链；
 
-	I、
+​		debugger语句可以用来在代码中产生断点，然后程序会停止在断点处，然后可以使用调试器输出变量的值、检查调用戳
 
-	
+​		use strict语句即语句解析为严格模式，会有一系列在严格模式下许主要的事项；
+
+
+
+7、对象	
 
 
 
