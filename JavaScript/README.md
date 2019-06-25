@@ -286,7 +286,7 @@ function getlenders(amount,apr,years,zipcode) {
 
 		in运算符：
 
-		instanceof运算符：​			
+​		instanceof运算符：​			
 
 	J、逻辑运算符：
 
@@ -302,7 +302,7 @@ function getlenders(amount,apr,years,zipcode) {
 
 	L、表达式计算：eval();
 
-	M、其他运算符：
+​	M、其他运算符：
 
 		条件运算符（？：）：第一个操作数是布尔值，如果为真，则执行第二个操作数，如果为假，则执行第三个操作数；
 
@@ -356,7 +356,29 @@ function getlenders(amount,apr,years,zipcode) {
 
 
 
-7、对象	
+7、对象	 
+
+​	A、创建对象：用var 加花括号{}创建；用new object（）创建对象；object.create（）创建对象，是一个静态函数；
+
+​	B、原型对象；object对象，查找object对象中的属性及属性值；
+
+​	C、属性查询和设置：点号法和方括号法，点号访问对象属性时，属性名是用表示符表示的，表示符直接字JS程序中出现，他们不是数据类型，所以程序无法修改它们；方括号访问对象属性时，属性名是通过字符串表示的，字符串是JS的数据类型，程序运行时可以修改和创建它们；
+
+​	D、关联数组
+
+​	E、
+
+​	F、
+
+​	H、
+
+​	I、
+
+​	J、
+
+​	K、
+
+
 
 
 
@@ -368,4 +390,4 @@ function getlenders(amount,apr,years,zipcode) {
 
 	
 
-	
+​	
