@@ -372,9 +372,9 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​	H、删除属性：delete运算符只能删除自有属性，不能删除继承属性，不能删除那些可配置性为false的属性；
 
-​	I、检测属性：for in 、hasOwnPreperty() 、  propertyIsEnumberable()方法检测某个对象中是否含有被检测属性；其中in 可以区分值为null和undefined的属性
+​	I、检测属性：for in 、hasOwnPreperty() 、  propertyIsEnumberable()方法检测某个对象中是否含有被检测属性；其中in 可以区分值为null和undefined的属性；
 
-​	J、
+​	J、枚举类型：
 
 ​	K、
 
