@@ -376,7 +376,7 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​	J、枚举类型：
 
-​	K、今天看会心理学
+​	K、
 
 
 
