@@ -374,9 +374,9 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​	I、检测属性：for in 、hasOwnPreperty() 、  propertyIsEnumberable()方法检测某个对象中是否含有被检测属性；其中in 可以区分值为null和undefined的属性；
 
-​	J、枚举类型：
+​	J、枚举属性：
 
-​	K、
+​	K、属性getter和setter
 
 
 
