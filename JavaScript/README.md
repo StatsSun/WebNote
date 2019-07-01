@@ -378,6 +378,10 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​	K、属性getter和setter
 
+​	L、
+
+​	
+
 
 
 
