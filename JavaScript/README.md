@@ -374,7 +374,13 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​	I、检测属性：for in 、hasOwnPreperty() 、  propertyIsEnumberable()方法检测某个对象中是否含有被检测属性；其中in 可以区分值为null和undefined的属性；
 
-​	J、枚举属性：
+​	J、枚举属性：对象继承的内置方法不可枚举，但在代码中给予对象添加的属性可枚举；
+
+​		枚举方法：for   in  方法；
+
+​		Obiect.keys():返回数组，数组由对象中可枚举的自有属性名称构成；
+
+​		Obiect.getOwnpropertyNames():返回对象中所有的属性名称，包括不可枚举的属性；
 
 ​	K、属性getter和setter
 
