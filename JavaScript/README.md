@@ -396,7 +396,11 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​		存取器属性的4个特性：读取（get） 、写入（set）、可枚举、可配置；
 
-	
+​		获得某个对象特定属性的属性描述符：object.getOwnPropertyDescriptor()，只能到的自有属性的描述符，返回的描述符形式为：{value:1, writable:true, enumerable:true, configurable:true}、或着{get:/*func*/, set:undefined, enumerable:true, configurable:true};若想获得继承属性的特性，需要便利原型链；
+
+​		设置属性的特性：object.defineProperty()
+
+​	
 
 
 
