@@ -398,7 +398,16 @@ function getlenders(amount,apr,years,zipcode) {
 
 ​		获得某个对象特定属性的属性描述符：object.getOwnPropertyDescriptor()，只能到的自有属性的描述符，返回的描述符形式为：{value:1, writable:true, enumerable:true, configurable:true}、或着{get:/*func*/, set:undefined, enumerable:true, configurable:true};若想获得继承属性的特性，需要便利原型链；
 
-​		设置属性的特性：object.defineProperty()
+​		设置属性的特性：object.defineProperty(),传入要修改的对象、要创建或修改的属性名称以及属性描述符对象：
+
+```javascript
+var o = {}
+//添加一个可读写、可枚举、值为1的数据属性
+Object.defineProperty(o,"x",{value:1, writable:true, enumerable:true, configurable:true})
+
+```
+
+​		对于新创建的属性来说，默认的特性值是false或undefined；
 
 ​	
 
