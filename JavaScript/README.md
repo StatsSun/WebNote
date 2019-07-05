@@ -409,6 +409,10 @@ Object.defineProperty(o,"x",{value:1, writable:true, enumerable:true, configurab
 
 ​		对于新创建的属性来说，默认的特性值是false或undefined；
 
+M、对象的三个属性：原型属性、类属性、可扩展性
+
+​	
+
 ​	
 
 
