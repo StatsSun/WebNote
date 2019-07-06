@@ -411,6 +411,28 @@ Object.defineProperty(o,"x",{value:1, writable:true, enumerable:true, configurab
 
 M、对象的三个属性：原型属性、类属性、可扩展性
 
+​	原则属性：Object.prototype作为对象直接量的原型；
+
+​	类属性：classof();
+
+​	可扩展性：Object.esExtensions()、Object.seal()、Object.isSealed()检测对象是否封闭，Object.frozen严格锁定冻结对象，使用Object.isfrozen()检测对象是否冻结；
+
+N、序列化对象：JSON.stringify()、JSON.parse()用来序列化和还原对象；
+
+O、对象方法：
+
+​	toString（）
+
+​	toLocalString()
+
+​	toJSON()
+
+​	valueOf()
+
+八、数组
+
+
+
 ​	
 
 ​	
