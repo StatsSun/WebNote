@@ -454,7 +454,15 @@ O、对象方法：
 E、数组遍历：比较常用的方法for循环
 
 ```javascript
-
+//获得o对象属性名组成的数组
+var keys = Object.keys(o);
+var values = [];
+for(var i=0;i<keys.length;i++ ){
+    //获得索引处的建值
+    var key = keys[i];
+    //保存属性值
+    values[i] = o[key];
+}
 ```
 
 
