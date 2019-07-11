@@ -477,7 +477,22 @@ for(var i=0,len=keys.length;i<len;i++){
 //for循环中可以定义多个变量，利用len变量得到恒定keys的长度，每次循环只查询一次；
 ```
 
+F、多维数组：js不支持真正的多维数组，但可以两次使用[ ]操作符来近似多维数组；
 
+```javascript
+// 表格有10行
+var table = new Array(10);
+//每行有10列
+for(var i=0; i<table.length; i++) table[i] = new Array(10);
+//初始化数组
+for(var row=0; row<table.length; row++){
+    for(col=0; col<table[row].length; col++){
+        table[row][col] = row*col;
+    }
+}
+//执行
+var product = table[5][7]     //返回35
+```
 
 ​		
 
