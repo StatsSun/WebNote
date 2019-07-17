@@ -572,6 +572,21 @@ toString()和toLocaleString()：将数组中每个元素转化为字符串，并
 
 
 
+H、ES5中的方法
+
+forEach（）：从头到位遍历数组，为每个元素调用指定函数；其使用三个参数调用函数：数组元素、数组索引、数组本身；该函数在将所有元素遍历完前无法停止，即不能使用break等运算符，但可以使用try快中、使其抛出foreach.break异常，循环就会停止；
+
+ ```javascript
+function foreach(a,f,t){
+    try{a.forEach(f,t);}
+    catch(e){
+        if(e===foreach.break) return;
+        else throw e;
+    }
+}
+foreach.break = new Error("stopIteration");
+ ```
+
 
 
 
