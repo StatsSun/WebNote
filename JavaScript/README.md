@@ -599,7 +599,7 @@ var b = a.map(function(x){return x*x;})
 
 
 
-filiter()：返回调用数组元素的一个子集
+filiter()：返回调用数组元素的一个子集；传递的函数是用来逻辑判定的，该函数返回true或false，如果是true则该元素加入到返回数组中来，此元素即为filleter返回子集数组元素之一；
 
 ​	
 
