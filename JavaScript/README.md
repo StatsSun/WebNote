@@ -247,7 +247,7 @@ function getlenders(amount,apr,years,zipcode) {
 五、表达式和运算符
 
 	A、对象和数组的初始化表达式：或叫做对象直接量或数组直接量，数组直接量列表中的列表逗号之间的元素可以省略，但被省略的位置会被填充为undefined，并保留列表的原始长度；对象直接量初始值中若使用delete删除其中某些项元素时，对象或者列表长度不会变化，删除项位置被填充为undefined；
-
+	
 	B、函数定义表达式：
 	
 	C、属性访问表达式：主要是对象属性和数组的访问，用“.”或者“[]”访问对象属性或者数组内元素；在“'.'”和“[”之前的表达式总是会被首选计算，如果计算结果是null或者undefined，则表达式抛出类型错误异常，因为两个值都不包括任何属性的值；
@@ -285,9 +285,9 @@ function getlenders(amount,apr,years,zipcode) {
 		比较运算符：
 	
 		in运算符：
-
+	
 		instanceof运算符：​			
-
+	
 	J、逻辑运算符：
 	
 		逻辑于（&&）：
@@ -301,9 +301,9 @@ function getlenders(amount,apr,years,zipcode) {
 		带操作的赋值运算：
 	
 	L、表达式计算：eval();
-
+	
 	M、其他运算符：
-
+	
 		条件运算符（？：）：第一个操作数是布尔值，如果为真，则执行第二个操作数，如果为假，则执行第三个操作数；
 	
 		typeof运算符：是一元运算符，可以和条件运算符结合使用、和switch语句结合等；
@@ -321,9 +321,9 @@ function getlenders(amount,apr,years,zipcode) {
 六、语句
 
 	A、语句语法：每条语句结尾处须需加上“；”分号；
-
+	
 		多条语句可用{}号包裹形成语句块；
-
+	
 		若一条语句只有一个分号，则形成空语句，空语句可以在一些for循环中见到；
 	
 	B、声明语句： var  和  function，分别定义变量和函数；
@@ -335,23 +335,23 @@ function getlenders(amount,apr,years,zipcode) {
 	C、条件语句：if、if else 、if elseif 、else、switch   case  break语句
 	
 	D、循环语句：while 、do／while、 for 、for   in、等
-
+	
 	E、跳转循环：break、continue、return、throw语句；
-
+	
 		break语句直接跳至语句块的结束或者终止闭合语句块的执行；
-
+	
 		continue语句在while循环中直接进入下一轮循环，在for循环中先计算increment表达式（即自增表			  达式），然后再判断循环；只能在循环体内使用
-
+	
 		return语句只能在函数体内出现，否则会报语法错误，当执行到return时，函数终止执行，并返回函数计算调用的值；
-
+	
 		throw语句抛出一个代表错误的数字，或者包含可读的错误消息字符串，通常返回Error类型和其子类型；通常于catch（e）、finally任一语句一起执行；
-
+	
 	F、with、 debugger、 use  strict 语句
-
+	
 		with语句用于临时扩展作用域链；
-
+	
 		debugger语句可以用来在代码中产生断点，然后程序会停止在断点处，然后可以使用调试器输出变量的值、检查调用戳
-
+	
 		use strict语句即语句解析为严格模式，会有一系列在严格模式下许主要的事项；
 
 
@@ -359,46 +359,46 @@ function getlenders(amount,apr,years,zipcode) {
 七、对象	 
 
 	A、创建对象：用var 加花括号{}创建；用new object（）创建对象；object.create（）创建对象，是一个静态函数；
-
+	
 	B、原型对象；object对象，查找object对象中的属性及属性值；
-
+	
 	C、属性查询和设置：点号法和方括号法，点号访问对象属性时，属性名是用表示符表示的，表示符直接字JS程序中出现，他们不是数据类型，所以程序无法修改它们；方括号访问对象属性时，属性名是通过字符串表示的，字符串是JS的数据类型，程序运行时可以修改和创建它们；
-
+	
 	D、关联数组：
-
+	
 	E、继承：对象的原型属性构成一个“链”，通过这个“链”可以实现属性的继承；当新建对象添加的属性名和继承来的属性同名时，则继承属性值被覆盖，原继承对象值不变；
-
+	
 	F、属性访问错误：语法错误和类型错误
-
+	
 	H、删除属性：delete运算符只能删除自有属性，不能删除继承属性，不能删除那些可配置性为false的属性；
-
+	
 	I、检测属性：for in 、hasOwnPreperty() 、  propertyIsEnumberable()方法检测某个对象中是否含有被检测属性；其中in 可以区分值为null和undefined的属性；
-
+	
 	J、枚举属性：对象继承的内置方法不可枚举，但在代码中给予对象添加的属性可枚举；
-
+	
 		枚举方法：for   in  方法；
-
+	
 		Obiect.keys():返回数组，数组由对象中可枚举的自有属性名称构成；
-
+	
 		Obiect.getOwnpropertyNames():返回对象中所有的属性名称，包括不可枚举的属性；
 
-​	K、属性getter和setter：被称为存取器属性，不具有可写性；
+	K、属性getter和setter：被称为存取器属性，不具有可写性；
 
-​		如果属性同时具有getter和setter方法，则它是一个只读／写属性（数据属性中有一部分例外）；
+		如果属性同时具有getter和setter方法，则它是一个只读／写属性（数据属性中有一部分例外）；
 
-​		读取只写读属性总是返回undefined；
+		读取只写读属性总是返回undefined；
 
-​		存取器属性和数据属性一样，可以继承；
+		存取器属性和数据属性一样，可以继承；
 
-​	L、属性的特性：属性包含名、值、特性（value、可写、可枚举、可配置特性）；
+	L、属性的特性：属性包含名、值、特性（value、可写、可枚举、可配置特性）；
 
-​		数据属性的4个特性是：值（value）、可读性（writable）、可枚举（enumerated）、可配置（configurable）；
+		数据属性的4个特性是：值（value）、可读性（writable）、可枚举（enumerated）、可配置（configurable）；
 
-​		存取器属性的4个特性：读取（get） 、写入（set）、可枚举、可配置；
+		存取器属性的4个特性：读取（get） 、写入（set）、可枚举、可配置；
 
-​		获得某个对象特定属性的属性描述符：object.getOwnPropertyDescriptor()，只能到的自有属性的描述符，返回的描述符形式为：{value:1, writable:true, enumerable:true, configurable:true}、或着{get:/*func*/, set:undefined, enumerable:true, configurable:true};若想获得继承属性的特性，需要便利原型链；
+		获得某个对象特定属性的属性描述符：object.getOwnPropertyDescriptor()，只能到的自有属性的描述符，返回的描述符形式为：{value:1, writable:true, enumerable:true, configurable:true}、或着{get:/*func*/, set:undefined, enumerable:true, configurable:true};若想获得继承属性的特性，需要便利原型链；
 
-​		设置属性的特性：object.defineProperty(),传入要修改的对象、要创建或修改的属性名称以及属性描述符对象：
+		设置属性的特性：object.defineProperty(),传入要修改的对象、要创建或修改的属性名称以及属性描述符对象：
 
 ```javascript
 var o = {}
@@ -407,49 +407,49 @@ Object.defineProperty(o,"x",{value:1, writable:true, enumerable:true, configurab
 
 ```
 
-​		对于新创建的属性来说，默认的特性值是false或undefined；
+		对于新创建的属性来说，默认的特性值是false或undefined；
 
 M、对象的三个属性：原型属性、类属性、可扩展性
 
-​	原则属性：Object.prototype作为对象直接量的原型；
+	原则属性：Object.prototype作为对象直接量的原型；
 
-​	类属性：classof();
+	类属性：classof();
 
-​	可扩展性：Object.esExtensions()、Object.seal()、Object.isSealed()检测对象是否封闭，Object.frozen严格锁定冻结对象，使用Object.isfrozen()检测对象是否冻结；
+	可扩展性：Object.esExtensions()、Object.seal()、Object.isSealed()检测对象是否封闭，Object.frozen严格锁定冻结对象，使用Object.isfrozen()检测对象是否冻结；
 
 N、序列化对象：JSON.stringify()、JSON.parse()用来序列化和还原对象；
 
 O、对象方法：
 
-​	toString（）
+	toString（）
 
-​	toLocalString()
+	toLocalString()
 
-​	toJSON()
+	toJSON()
 
-​	valueOf()
+	valueOf()
 
 八、数组
 
-​	A、创建数组：数据直接量或则new array（），数组具有length属性，并会自动扩展，如果通过函数方法设定length的值，则会对数组进行截断操作；
+	A、创建数组：数据直接量或则new array（），数组具有length属性，并会自动扩展，如果通过函数方法设定length的值，则会对数组进行截断操作；
 
-​	B、数组读写：用[]方括号对数组进行读写操作，所有的数组都是对象，所有的索引都是属性名，但只有0-2的32次方-2之间的属性名才称为索引；
+	B、数组读写：用[]方括号对数组进行读写操作，所有的数组都是对象，所有的索引都是属性名，但只有0-2的32次方-2之间的属性名才称为索引；
 
-​	C、稀疏数组：包含从0开始不连续索引的数组，逗号间隔之间的元素为undefined，其仍作为length的值计算，即数组中找不到一个元素的索引值大于或等于length值；
+	C、稀疏数组：包含从0开始不连续索引的数组，逗号间隔之间的元素为undefined，其仍作为length的值计算，即数组中找不到一个元素的索引值大于或等于length值；
 
-​	D、数组元素的添加和删除：
+	D、数组元素的添加和删除：
 
-​		最常见的添加方法是：[]用针对方括号索引项赋值；
+		最常见的添加方法是：[]用针对方括号索引项赋值；
 
-​		push（）方法在数组末尾增加一个或多个元素，即从数组的尾部压入一个或多个元素给到数组；
+		push（）方法在数组末尾增加一个或多个元素，即从数组的尾部压入一个或多个元素给到数组；
 
-​		pop（）方法从数组尾部每次减少数组长度1，并返回被删除的元素，即改变数组的length值；
+		pop（）方法从数组尾部每次减少数组长度1，并返回被删除的元素，即改变数组的length值；
 
-​		unshift（）方法在数组首部插入一个元素，并将其他元素索引值依次增加；
+		unshift（）方法在数组首部插入一个元素，并将其他元素索引值依次增加；
 
-​		shift（）从头部删除一个元素，并将其他元素的索引值依次减小，改变数组的length值；
+		shift（）从头部删除一个元素，并将其他元素的索引值依次减小，改变数组的length值；
 
-​		delete运算符删除元素，删除元素后该位置值变为undefined，数组的length值不变，即数组变为稀疏	数组；
+		delete运算符删除元素，删除元素后该位置值变为undefined，数组的length值不变，即数组变为稀疏	数组；
 
 E、数组遍历：比较常用的方法for循环
 
@@ -494,15 +494,15 @@ for(var row=0; row<table.length; row++){
 var product = table[5][7]     //返回35
 ```
 
-​		
+		
 
 G、数组方法：
 
-​	join（）：将所有元素转换为字符串并返回连接在一起后的字符串，可以指定可选的字符串，用来分隔数组的元素个数；
+	join（）：将所有元素转换为字符串并返回连接在一起后的字符串，可以指定可选的字符串，用来分隔数组的元素个数；
 
-​	revers（）：将数组中的元素颠倒顺序，返回逆序数组；该方法采用替换，即不通过重新排列元素产生新数组，而是在原先的数组中重新排列元素，即其可改写数组；
+	revers（）：将数组中的元素颠倒顺序，返回逆序数组；该方法采用替换，即不通过重新排列元素产生新数组，而是在原先的数组中重新排列元素，即其可改写数组；
 
-​	sort（）：Array.sort()方法将数组中元素排序后返回排序后的数组；当不带参数是默认以字母表顺序排，若有undefined值，则拍到最后；若不安默认规则排序，则必须给sort方法传入一个比较函数，该函数决定排好序的二个参数的前后位置；
+	sort（）：Array.sort()方法将数组中元素排序后返回排序后的数组；当不带参数是默认以字母表顺序排，若有undefined值，则拍到最后；若不安默认规则排序，则必须给sort方法传入一个比较函数，该函数决定排好序的二个参数的前后位置；
 
 ```javascript
 var a = [33, 4, 111, 222];
@@ -516,7 +516,7 @@ a.sort(function(a,b){
 })
 ```
 
-​	concat()：Array.concat() 方法创建并返回一个新数组，返回的数组包括调用concat（）的原始数组元素和concat方法中的参数，若参数中任何一个自身是数组，则连接的是数组的元素而不是数组本身；其不会修改元数组
+	concat()：Array.concat() 方法创建并返回一个新数组，返回的数组包括调用concat（）的原始数组元素和concat方法中的参数，若参数中任何一个自身是数组，则连接的是数组的元素而不是数组本身；其不会修改元数组
 
 ```javascript
 var a = [1, 2, 3, 4]
@@ -527,7 +527,7 @@ a.concat(4, 5, [6,7]);  //返回[1,2,3,4,5,6,7]
 
 
 
-​	slice()：Array.slice（）方法返回指定数组的一个片段或者子数组，两个参数指定片段或子数组的开始和结束位置；返回的数组包括第一个参数位置元素到第二个参数指定位置之前的元素，不包括第二参数所在元素；可用负值来逆序选择；其不会修改原数组
+	slice()：Array.slice（）方法返回指定数组的一个片段或者子数组，两个参数指定片段或子数组的开始和结束位置；返回的数组包括第一个参数位置元素到第二个参数指定位置之前的元素，不包括第二参数所在元素；可用负值来逆序选择；其不会修改原数组
 
  ```javascript
 var a = [1,2,3,4,5]
@@ -539,7 +539,7 @@ a.slice(-3,-2);  //[3]
 
 
 
-​	splice()：Array.splice（）是在数组中插入或者删除元素的通用方法，其会修改元数组；方法中第一个参数指定插入或者删除的起点，第二个参数指定应该从数组中删除的元素个数，如果省略第二个参数，则从第一个参数开始位置到数组结尾的全部元素将全部被删除；紧随其后的任意多个参数指定需要插入到数组中的元素，插入位置从第一个参数位置开始；splice返回一个由删除元素组成的数组，或者没有删除元素的空数组；
+	splice()：Array.splice（）是在数组中插入或者删除元素的通用方法，其会修改元数组；方法中第一个参数指定插入或者删除的起点，第二个参数指定应该从数组中删除的元素个数，如果省略第二个参数，则从第一个参数开始位置到数组结尾的全部元素将全部被删除；紧随其后的任意多个参数指定需要插入到数组中的元素，插入位置从第一个参数位置开始；splice返回一个由删除元素组成的数组，或者没有删除元素的空数组；
 
 ```javascript
 var a = [1,2,3,4,5,6,7]
@@ -601,7 +601,27 @@ var b = a.map(function(x){return x*x;})
 
 filiter()：返回调用数组元素的一个子集；传递的函数是用来逻辑判定的，该函数返回true或false，如果是true则该元素加入到返回数组中来，此元素即为filleter返回子集数组元素之一；
 
-​	
+```javascript
+a = [5,4,3,2,1];
+samllvalues = a.filiter(function(x){return x<3});//[2,1]
+```
+
+
+
+every()和some()：是数组的逻辑判定，应用指定函数进行判定，返回true或false；
+
+```javascript
+//every()当且仅当针对数组中所有元素调用判定函数都返回true时，它才返回true；
+//当数组中检查到第一个为false时，该方法即停止检查，并返回false，否则继续检查，直到遍历判断所有元素；
+ var a = [1,2,3,4,5];
+a.every(function(x){return x<6});//true
+
+//some()数组元素中至少有一个调用判定函数返回true时，即返回true，否则继续检查；
+//当检查到数组中第一个元素为true时，方法即停止检查，并返回true；
+
+```
+
+
 
 ​	
 
