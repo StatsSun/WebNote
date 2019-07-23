@@ -623,7 +623,13 @@ a.every(function(x){return x<6});//true
 
 
 
-​	
+reduce()和reduceRight()：使用指定函数将数组元素进行组合
+
+
+
+
+
+indexOf()和lastindexOf()：
 
 
 
