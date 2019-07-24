@@ -623,13 +623,19 @@ a.every(function(x){return x<6});//true
 
 
 
-reduce()和reduceRight()：使用指定函数将数组元素进行组合
+reduce()和reduceRight()：使用指定函数将数组元素进行组合；
+
+```javascript
+
+```
 
 
 
+indexOf()和lastindexOf()：搜索整个数组中具有给定值当元素，返回找到的第一个元素的索引或者如果没有找到则返回-1；
 
+```javascript
 
-indexOf()和lastindexOf()：
+```
 
 
 
