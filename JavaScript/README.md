@@ -381,23 +381,23 @@ function getlenders(amount,apr,years,zipcode) {
 		Obiect.keys():返回数组，数组由对象中可枚举的自有属性名称构成；
 	
 		Obiect.getOwnpropertyNames():返回对象中所有的属性名称，包括不可枚举的属性；
-
+	
 	K、属性getter和setter：被称为存取器属性，不具有可写性；
-
+	
 		如果属性同时具有getter和setter方法，则它是一个只读／写属性（数据属性中有一部分例外）；
-
+	
 		读取只写读属性总是返回undefined；
-
+	
 		存取器属性和数据属性一样，可以继承；
-
+	
 	L、属性的特性：属性包含名、值、特性（value、可写、可枚举、可配置特性）；
-
+	
 		数据属性的4个特性是：值（value）、可读性（writable）、可枚举（enumerated）、可配置（configurable）；
-
+	
 		存取器属性的4个特性：读取（get） 、写入（set）、可枚举、可配置；
-
+	
 		获得某个对象特定属性的属性描述符：object.getOwnPropertyDescriptor()，只能到的自有属性的描述符，返回的描述符形式为：{value:1, writable:true, enumerable:true, configurable:true}、或着{get:/*func*/, set:undefined, enumerable:true, configurable:true};若想获得继承属性的特性，需要便利原型链；
-
+	
 		设置属性的特性：object.defineProperty(),传入要修改的对象、要创建或修改的属性名称以及属性描述符对象：
 
 ```javascript
@@ -412,9 +412,9 @@ Object.defineProperty(o,"x",{value:1, writable:true, enumerable:true, configurab
 M、对象的三个属性：原型属性、类属性、可扩展性
 
 	原则属性：Object.prototype作为对象直接量的原型；
-
+	
 	类属性：classof();
-
+	
 	可扩展性：Object.esExtensions()、Object.seal()、Object.isSealed()检测对象是否封闭，Object.frozen严格锁定冻结对象，使用Object.isfrozen()检测对象是否冻结；
 
 N、序列化对象：JSON.stringify()、JSON.parse()用来序列化和还原对象；
@@ -422,33 +422,33 @@ N、序列化对象：JSON.stringify()、JSON.parse()用来序列化和还原对
 O、对象方法：
 
 	toString（）
-
+	
 	toLocalString()
-
+	
 	toJSON()
-
+	
 	valueOf()
 
 八、数组
 
 	A、创建数组：数据直接量或则new array（），数组具有length属性，并会自动扩展，如果通过函数方法设定length的值，则会对数组进行截断操作；
-
+	
 	B、数组读写：用[]方括号对数组进行读写操作，所有的数组都是对象，所有的索引都是属性名，但只有0-2的32次方-2之间的属性名才称为索引；
-
+	
 	C、稀疏数组：包含从0开始不连续索引的数组，逗号间隔之间的元素为undefined，其仍作为length的值计算，即数组中找不到一个元素的索引值大于或等于length值；
-
+	
 	D、数组元素的添加和删除：
-
+	
 		最常见的添加方法是：[]用针对方括号索引项赋值；
-
+	
 		push（）方法在数组末尾增加一个或多个元素，即从数组的尾部压入一个或多个元素给到数组；
-
+	
 		pop（）方法从数组尾部每次减少数组长度1，并返回被删除的元素，即改变数组的length值；
-
+	
 		unshift（）方法在数组首部插入一个元素，并将其他元素索引值依次增加；
-
+	
 		shift（）从头部删除一个元素，并将其他元素的索引值依次减小，改变数组的length值；
-
+	
 		delete运算符删除元素，删除元素后该位置值变为undefined，数组的length值不变，即数组变为稀疏	数组；
 
 E、数组遍历：比较常用的方法for循环
@@ -499,9 +499,9 @@ var product = table[5][7]     //返回35
 G、数组方法：
 
 	join（）：将所有元素转换为字符串并返回连接在一起后的字符串，可以指定可选的字符串，用来分隔数组的元素个数；
-
+	
 	revers（）：将数组中的元素颠倒顺序，返回逆序数组；该方法采用替换，即不通过重新排列元素产生新数组，而是在原先的数组中重新排列元素，即其可改写数组；
-
+	
 	sort（）：Array.sort()方法将数组中元素排序后返回排序后的数组；当不带参数是默认以字母表顺序排，若有undefined值，则拍到最后；若不安默认规则排序，则必须给sort方法传入一个比较函数，该函数决定排好序的二个参数的前后位置；
 
 ```javascript
@@ -639,7 +639,7 @@ indexOf()和lastindexOf()：搜索整个数组中具有给定值当元素，返�
 
 
 
-
+九、对象
 
 
 
